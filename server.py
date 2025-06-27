@@ -33,6 +33,7 @@ def verify():
 @app.route("/webhook", methods=["POST"])
 def webhook():
     data = request.get_json()
+    print("[WEBHOOK RECEIVED]", data)  # 🔥 ADD THIS
     try:
         entry = data["entry"][0]
         changes = entry["changes"][0]["value"]
@@ -46,7 +47,7 @@ def webhook():
         response_text = generate_response(user_text, intent)
 
         # Send response back to user via WhatsApp
-        url = f"https://graph.facebook.com/v18.0/{phone_number_id}/messages"
+        url = f"https://graph.facebook.com/v23.0/{phone_number_id}/messages"
         headers = {
             "Authorization": f"Bearer {ACCESS_TOKEN}",
             "Content-Type": "application/json"
