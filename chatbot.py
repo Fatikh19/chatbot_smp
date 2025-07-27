@@ -269,20 +269,19 @@ def is_input_valid_for_intent(intent, input_text):
     input_text = input_text.lower()
     keywords = {
         'ucapan_salam': ['halo', 'assalamu', 'selamat', 'hai', 'wassalamu', 'pagi', 'siang', 'sore', 'malam', 'terima kasih', 'makasih'],
-        'tanya_biaya_formulir': ['formulir', 'daftar ulang', 'harga formulir', 'formulir pendaftaran'],
-        'tanya_biaya_seragam': ['seragam', 'baju sekolah', 'seragam sekolah'],
+        'tanya_biaya_formulir': ['formulir', 'harga formulir', 'formulr', 'daftar ulang', 'formulir daftar', 'formulir pendaftaran'],
+        'tanya_biaya_seragam': ['seragam', 'seragamnya', 'baju sekolah', 'harga seragam', 'total seragam'],
         'tanya_biaya_dsp': ['dsp', 'gedung', 'bangunan', 'biaya gedung'],
-        'tanya_biaya_pendaftaran': ['pendaftaran', 'biaya daftar', 'formulir'],
-        'tanya_biaya_spp': ['spp', 'bulanan', 'uang sekolah'],
-        'tanya_biaya_ujian': ['ujian', 'sumatif', 'anbk'],
-        'tanya_biaya_ekstrakulikuler': ['ekskul', 'ekstra', 'eskul', 'pramuka', 'futsal', 'silat', 'hadroh'],
-        'tanya_biaya_paket': ['buku paket', 'paket'],
-        'tanya_biaya_lks': ['buku lks', 'lks'],
+        'tanya_biaya_pendaftaran': ['pendaftaran', 'daftar masuk', 'biaya daftar', 'beban', 'biaya pendaftaran', 'total daftar', 'daftar formulir'],
+        'tanya_biaya_spp': ['spp', 'bayar bulanan', 'biaya spp', 'spp naik', 'spp total', 'spp total setahun'],
+        'tanya_biaya_ujian': ['ujian', 'ujian nasional', 'ujian sekolah', 'ujian praktek', 'ujian sumatif', 'anbk', 'sumatif'],
+        'tanya_biaya_ekstrakulikuler': ['ekstra', 'ekskul', 'ekstrakulikuler', 'eskul', 'pramuka', 'silat', 'hadroh', 'futsal'],
+        'tanya_biaya_paket': ['paket', 'buku paket', 'biaya buku paket'],
+        'tanya_biaya_lks': ['lks', 'buku lks', 'biaya buku lks'],
     }
     if intent not in keywords:
-        return False  # intent tidak dikenal
-    return any(kw in input_text for kw in keywords[intent])
-
+        return False
+    return any(keyword in input_text for keyword in keywords[intent])
 
 def chatbot_reply(input_text):
     try:
@@ -294,3 +293,4 @@ def chatbot_reply(input_text):
         return reply if reply else "Maaf saya tidak mengerti, harap ketik ulang pertanyaan yang lebih spesifik."
     except Exception as e:
         return f"Terjadi kesalahan: {str(e)}"
+
