@@ -1,0 +1,194 @@
+input,response,intent
+Assalamu'alaikum.,Wa'alaikumsalam.,ucapan_salam
+Ass wr wb.,Wa'alaikumsalam warahmatullahi wabarakatuh.,ucapan_salam
+Hallo TU SMP Arrohman,Halo! Ada yang bisa saya bantu?,ucapan_salam
+Selamat pagi TU,Halo selamat pagi! Silakan bertanya.,ucapan_salam
+Hallo assalamualaikum,Helo Wa'alaikumsalam. Ada yang bisa saya bantu?,ucapan_salam
+Bolehkah saya tanya?,"Silakan, saya siap membantu.",ucapan_salam
+Terima kasih banyak,Sama-sama! Senang membantu Anda.,ucapan_salam
+Wassalamualaikum,Wassalamualaikum.,ucapan_salam
+Pendaftaran sekolah berapa ya?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Harga daftar ulang berapa?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Formulir daftar smp arrohman brp?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Apakah daftar gratis?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp.100.000.,tanya_biaya_formulir
+Daftar masuk brp?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Harga formulir?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Seragam berapa duitnya?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Harga seragamnya total?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Seragam di SMP Islam Arrohman brp ya?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Seragam anak saya?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Total seragam?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP sebulan brapa ya?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Berapa SPP per bulan?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+SPP naik nggak?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+SPP bulan ini?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Biaya spp total setahun?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000 sehingga untuk satu tahun (12 bulan) biayanya adalah Rp. 1.800.000.,tanya_biaya_spp
+Apakah ada DSP?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+DSP nya ada?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Gedung bayar tidak?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Biaya gedung?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Bayar DSP?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Ujian nasional bayar brp?,Biaya Ujian Nasional di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_ujian
+Biaya ujian praktek brp?,Biaya Ujian Praktek kelas IX di SMP Islam Arrohman adalah Rp. 85.000.,tanya_biaya_ujian
+Ujian sumatif berapa?,Biaya Ujian Sumatif di SMP Islam Arrohman adalah Rp. 75.000 untuk setiap periode ujian.,tanya_biaya_ujian
+ANBK berapa?,Biaya Ujian ANBK di SMP Islam Arrohman adalah Rp. 75.000.,tanya_biaya_ujian
+Biaya ujian sekolah?,Biaya Ujian Sekolah kelas IX di SMP Islam Arrohman adalah Rp. 80.000.,tanya_biaya_ujian
+Berapa biaya formulir?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Biaya baju sekolah?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP total setahun?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+DSP sekolah ada?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sekolah brapa?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Pagi bapak TU,Selamat pagi! Ada yang bisa saya bantu?,ucapan_salam
+Biaya daftar ulang?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Berapa biaya seragam?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP satu bulan brp?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Gedung bayar brp?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Biaya daftar masuk?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sekolah brapa?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Makasih TU,Selamat pagi! Ada yang bisa saya bantu?,ucapan_salam
+Daftar formulir?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Harga seragam sekolah?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar spp brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Ada DSP?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+LKS terdiri dari pelajaran apa saja?,Buku Lks semua mata pelajaran.,tanya_biaya_lks
+Harga LKS kelas 7?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+LKS kelas 8 berapa?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+LKS kelas 9 berapa harganya?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+Biaya buku paket dan LKS?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+Apakah biaya LKS wajib dibayar?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+Biaya pendaftaran?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ujian?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+"Halo, assalamualaikum",Wa'alaikumsalam. Ada yang bisa saya bantu?,ucapan_salam
+Biaya daftar ulang?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Biaya baju sekolah?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP satu bulan brp?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Bayar gedung?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Daftar ulang brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ANBK?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+"Halo, assalamualaikum",Hai! Ada yang bisa saya bantu?,ucapan_salam
+Formulir daftar brp?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Seragamnya brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP naik tidak?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Ada DSP?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sumatif tengah semester brp?,Biaya Ujian sumatif tengah semester di SMP Islam Arrohman Rp. 75.000.,tanya_biaya_ujian
+Wassalam wr wb,Selamat pagi! Ada yang bisa saya bantu?,ucapan_salam
+Daftar formulir?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Harga seragam sekolah?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP naik tidak?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Gedung brp?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Total daftar brp?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ANBK?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Pagi bapak TU,Selamat pagi! Silakan bertanya.,ucapan_salam
+Pendaftaran brapa?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Biaya baju sekolah?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP naik tidak?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Bayar gedung?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sumatif akhir semester brp?,Biaya Ujian sumatif akhir semester di SMP Islam Arrohman Rp. 100.000.,tanya_biaya_ujian
+Pagi TU,Wa'alaikumsalam. Ada yang bisa saya bantu?,ucapan_salam
+Biaya daftar ulang?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Harga seragam sekolah?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar spp brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Ada DSP?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Biaya daftar masuk?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian praktek brapa?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Wassalam wr wb,Selamat pagi! Ada yang bisa saya bantu?,ucapan_salam
+Formulir daftar brp?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Total baju sekolah brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP total setahun?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Bayar gedung?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Daftar ulang brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sumatif brp?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Pagi bapak TU,Sama-sama! Semoga membantu.,ucapan_salam
+Formulir daftar brp?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Seragam total brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP satu bulan brp?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Ada DSP?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sekolah brapa?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Pagi TU,Selamat pagi! Silakan bertanya.,ucapan_salam
+Pendaftaran brapa?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Total baju sekolah brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar spp brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Bayar gedung?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Daftar ulang brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ujian nasional?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Makasih TU,Hai! Ada yang bisa saya bantu?,ucapan_salam
+Biaya daftar ulang?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Biaya baju sekolah?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar spp brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Bayar gedung?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Biaya pendaftaran?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ANBK?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Hai admin TU,Sama-sama! Senang membantu Anda.,ucapan_salam
+Pendaftaran brapa?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Seragamnya brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar bulanan brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+DSP sekolah ada?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ANBK?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Makasih TU,Sama-sama! Semoga membantu.,ucapan_salam
+Daftar formulir?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Seragamnya brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar bulanan brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Gedung bayar brp?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sekolah brapa?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Makasih TU,Wa'alaikumsalam. Ada yang bisa saya bantu?,ucapan_salam
+Biaya daftar ulang?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Total baju sekolah brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP naik tidak?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Gedung bayar brp?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Biaya pendaftaran?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian praktek brapa?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Pagi TU,Wa'alaikumsalam warahmatullahi wabarakatuh.,ucapan_salam
+Biaya daftar ulang?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Seragam total brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar spp brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Ada DSP?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Total daftar brp?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ujian?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+"Halo, assalamualaikum",Hai! Ada yang bisa saya bantu?,ucapan_salam
+Biaya daftar ulang?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Total baju sekolah brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP total setahun?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+DSP nya brp?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian sumatif brp?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Terimakasih TU,Sama-sama! Semoga membantu.,ucapan_salam
+Brp biaya daftar?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Total baju sekolah brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar spp brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+DSP nya brp?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Biaya daftar masuk?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya apa saja yang dibebankan kepada siswa?,Biaya yang dibebankan meliputi formulir pendaftaran daftar ulang seragam spp buku lks ujian-ujian hari besar islam dll.,tanya_biaya_pendaftaran
+Ujian sumatif brp?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Pagi TU,Wa'alaikumsalam warahmatullahi wabarakatuh.,ucapan_salam
+Pendaftaran brapa?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Berapa biaya seragam?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+Bayar bulanan brapa?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+Gedung brp?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Total daftar brp?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Biaya ANBK?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Wassalam wr wb,Sama-sama! Semoga membantu.,ucapan_salam
+Berapa biaya formulir?,Biaya formulir pendaftaran di SMP Islam Arrohman adalah Rp. 100.000.,tanya_biaya_formulir
+Seragamnya brp?,Biaya seragam di SMP Islam Arrohman adalah Rp. 375.000.,tanya_biaya_seragam
+SPP total setahun?,Biaya SPP per bulan di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_spp
+DSP sekolah ada?,Tidak ada biaya DSP atau bangunan di SMP Islam Arrohman.,tanya_biaya_dsp
+Pendaftaran brapa?,Total biaya pendaftaran tahun ini di SMP Islam Arrohman adalah Rp. 300.000.,tanya_biaya_pendaftaran
+Ujian praktek brapa?,Biaya Ujian di SMP Islam Arrohman bervariasi antara Rp. 75.000 hingga Rp. 100.000.,tanya_biaya_ujian
+Pagi TU,Sama-sama! Senang membantu Anda.,ucapan_salam
+Biaya ekskul pramuka brp?,Biaya ekskul pramuka di SMP Islam Arrohman gratis.,tanya_biaya_ekstrakulikuler
+Biaya ekskul hadroh brp?,Biaya ekskul hadroh di SMP Islam Arrohman gratis.,tanya_biaya_ekstrakulikuler
+Biaya ekskul futsal brp?,Biaya ekskul futsal di SMP Islam Arrohman gratis.,tanya_biaya_ekstrakulikuler
+Biaya ekskul silat brp?,Biaya ekskul silat di SMP Islam Arrohman gratis.,tanya_biaya_ekstrakulikuler
+Biaya buku paket?,Tidak ada biaya buku paket di SMP Islam Arrohman.,tanya_biaya_paket
+Berapa biaya paket?,Tidak ada biaya buku paket di SMP Islam Arrohman.,tanya_biaya_paket
+Harga paket di sekolah?,Tidak ada biaya buku paket di SMP Islam Arrohman.,tanya_biaya_paket
+Buku paket apa saja yang didapatkan?,Buku paket semua mata pelajaran.,tanya_biaya_paket
+Lks berapa harganya?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+Apakah ada biaya untuk buku lks?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+Berapa harga buku LKS SMP Arrohman?,Biaya buku lks di SMP Islam Arrohman adalah Rp. 150.000.,tanya_biaya_lks
+Apakah buku LKS sudah termasuk semua pelajaran?,Buku Lks semua mata pelajaran.,tanya_biaya_lks

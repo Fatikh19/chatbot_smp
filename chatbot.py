@@ -10,6 +10,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import os
 import matplotlib.pyplot as plt
 from tensorflow.keras.optimizers import Adam
+import string
 
 # --- Fungsi bantu ---
 def clean_text(text):
@@ -17,8 +18,18 @@ def clean_text(text):
     text = re.sub(r'[^\w\s]', '', text)
     return text.strip()
 
+def clean_text_input(text):
+    text = text.lower()
+    text = re.sub(r'[^\w\s]', '', text)  # hapus semua tanda baca
+    return text.strip()
+
+def clean_text_response(text):
+    text = text.lower()
+    text = re.sub(r'\s+', ' ', text)  # hanya normalisasi spasi, tidak menghapus tanda baca
+    return text.strip()
+
 # --- Config ---
-train_model = False  # Ubah ke True jika ingin melatih ulang
+train_model = True  # Ubah ke True jika ingin melatih ulang
 max_input_len = 20
 max_response_len = 30
 embedding_dim = 128
@@ -29,9 +40,9 @@ tokenizer_path = "tokenizer.pkl"
 # --- Training Mode ---
 if train_model:
     print("[INFO] Melatih model...")
-    data = pd.read_csv("biaya_versi_2_raw.csv").dropna()
-    data['input'] = data['input'].astype(str).apply(clean_text)
-    data['response'] = data['response'].astype(str).apply(clean_text)
+    data = pd.read_csv("dataset.csv").dropna()
+    data['input'] = data['input'].astype(str).apply(clean_text_input)
+    data['response'] = data['response'].astype(str).apply(clean_text_response)
     data['input_with_intent'] = data['intent'] + " " + data['input']
 
     inputs = data['input_with_intent'].tolist()
@@ -72,7 +83,7 @@ if train_model:
 
     history = model.fit([encoder_input, decoder_input], np.expand_dims(decoder_target, -1),
               batch_size=64,
-              epochs=400,
+              epochs=500,
               validation_split=0.2)
 
     model.save(model_path)
@@ -134,50 +145,106 @@ intent_list = [
     'tanya_biaya_pendaftaran',
     'tanya_biaya_spp',
     'tanya_biaya_ujian',
+    'tanya_biaya_ekstrakulikuler',
+    'tanya_biaya_paket',
+    'tanya_biaya_lks',
 ]
 
 def detect_intent(text):
     text = clean_text(text)
-    if any(word in text for word in ['halo', 'assalamu', 'selamat', 'hai', 'wassalamu', 'pagi','siang','sore','malam','terima kasih']):
+
+    if any(word in text for word in [
+        'halo', 'assalamu', 'selamat', 'hai', 'wassalamu',
+        'pagi', 'siang', 'sore', 'malam', 'terima kasih',
+        'makasih', 'terimakasih', 'tanya'
+    ]):
         return 'ucapan_salam'
-    elif any(word in text for word in ['formulir', 'harga formulir']):
+    
+    elif any(word in text for word in [
+        'formulir', 'harga formulir', 'formulr', 'daftar ulang',
+        'formulir daftar', 'formulir pendaftaran'
+    ]):
         return 'tanya_biaya_formulir'
-    elif any(word in text for word in ['seragam', 'baju sekolah']):
+    
+    elif any(word in text for word in [
+        'seragam', 'seragamnya', 'baju sekolah', 'harga seragam', 'total seragam'
+    ]):
         return 'tanya_biaya_seragam'
-    elif any(word in text for word in ['dsp', 'gedung', 'bangunan']):
+    
+    elif any(word in text for word in [
+        'dsp', 'gedung', 'bangunan', 'biaya gedung'
+    ]):
         return 'tanya_biaya_dsp'
-    elif any(word in text for word in ['pendaftaran', 'daftar masuk','daftar']):
+    
+    elif any(word in text for word in [
+        'pendaftaran', 'daftar masuk', 'biaya daftar', 'beban',
+        'biaya pendaftaran', 'total daftar', 'daftar formulir'
+    ]):
         return 'tanya_biaya_pendaftaran'
-    elif any(word in text for word in ['spp', 'bayar bulanan']):
+    
+    elif any(word in text for word in [
+        'spp', 'bayar bulanan', 'biaya spp', 'spp naik', 'spp total', 'spp total setahun'
+    ]):
         return 'tanya_biaya_spp'
-    elif any(word in text for word in ['ujian', 'ujian nasional', 'ujian sekolah', 'ujian praktek','ujian sumatif',"ANBK"]):
+    
+    elif any(word in text for word in [
+        'ujian', 'ujian nasional', 'ujian sekolah',
+        'ujian praktek', 'ujian sumatif', 'anbk', 'sumatif', 'sumatif tengah', 'sumatif akhir'
+    ]):
         return 'tanya_biaya_ujian'
+    
+    elif any(word in text for word in [
+        'ekstra', 'ekskul', 'ekstrakulikuler',
+        'eskul', 'pramuka', 'silat', 'hadroh', 'futsal'
+        , 'ekskul pramuka', 'ekskul silat', 'ekskul hadroh', 'ekskul futsal'
+    ]):
+        return 'tanya_biaya_ekstrakulikuler'
+    
+    elif any(word in text for word in [
+        'paket', 'buku paket', 'biaya buku paket'
+    ]):
+        return 'tanya_biaya_paket'
+    
+    elif any(word in text for word in [
+        'lks', 'buku lks', 'biaya buku lks'
+    ]):
+        return 'tanya_biaya_lks'
     else:
-        return 'ucapan_salam'
+        return None
 
 
 def proper_case(text):
-    # Capitalize first letter of the sentence and make the rest lowercase
-    # Special cases for terms like "Rp" and "SMP"
-    text = text.lower()
+    if not text:
+        return ""
     
-    # List of abbreviations or special terms
-    special_terms = ['rp', 'smp']
+    # Normalisasi spasi
+    text = text.strip()
+    
+    # Konversi awal ke lowercase
+    text = text.lower()
+
+    # Daftar istilah khusus yang perlu tetap kapital
+    special_terms = ['rp', 'smp', 'islam', 'arrohman','rp.','spp','dsp','anbk','lks','arrohman.']
 
     words = text.split()
     for i, word in enumerate(words):
-        # Capitalize the first word of the sentence
+        # Huruf pertama kalimat selalu kapital
         if i == 0:
-            words[i] = words[i].capitalize()
-        # Keep special terms like 'Rp' and 'SMP' in uppercase
+            words[i] = word.capitalize()
         elif word in special_terms:
             words[i] = word.upper()
-
-    # Join back into a string
-    return ' '.join(words)
+    
+    # Gabungkan kembali
+    result = ' '.join(words)
+    
+    # Tambahkan titik jika belum ada tanda baca di akhir
+    if result[-1] not in string.punctuation:
+        result += '.'
+    
+    return result
 
 def generate_response(input_text, intent):
-    full_input = f"{intent} {clean_text(input_text)}"
+    full_input = f"{intent} {clean_text_input(input_text)}"
     input_seq = tokenizer.texts_to_sequences([full_input])
     input_seq = pad_sequences(input_seq, maxlen=max_input_len, padding='post')
 
@@ -197,3 +264,14 @@ def generate_response(input_text, intent):
     final_response = ' '.join(response[1:])
     final_response = final_response.replace('<eos>', '').strip()  # Remove <eos> token
     return proper_case(final_response)
+
+def chatbot_reply(input_text):
+    try:
+        intent = detect_intent(input_text)
+        if intent is None:
+            return "Maaf saya tidak mengerti, harap ketik ulang pertanyaan yang lebih spesifik."
+        
+        reply = generate_response(input_text, intent)
+        return reply if reply else "Maaf saya tidak mengerti, harap ketik ulang pertanyaan yang lebih spesifik."
+    except Exception as e:
+        return f"Terjadi kesalahan: {str(e)}"
