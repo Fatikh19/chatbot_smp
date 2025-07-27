@@ -265,12 +265,31 @@ def generate_response(input_text, intent):
     final_response = final_response.replace('<eos>', '').strip()  # Remove <eos> token
     return proper_case(final_response)
 
+def is_input_valid_for_intent(intent, input_text):
+    input_text = input_text.lower()
+    keywords = {
+        'ucapan_salam': ['halo', 'assalamu', 'selamat', 'hai', 'wassalamu', 'pagi', 'siang', 'sore', 'malam', 'terima kasih', 'makasih'],
+        'tanya_biaya_formulir': ['formulir', 'daftar ulang', 'harga formulir', 'formulir pendaftaran'],
+        'tanya_biaya_seragam': ['seragam', 'baju sekolah', 'seragam sekolah'],
+        'tanya_biaya_dsp': ['dsp', 'gedung', 'bangunan', 'biaya gedung'],
+        'tanya_biaya_pendaftaran': ['pendaftaran', 'biaya daftar', 'formulir'],
+        'tanya_biaya_spp': ['spp', 'bulanan', 'uang sekolah'],
+        'tanya_biaya_ujian': ['ujian', 'sumatif', 'anbk'],
+        'tanya_biaya_ekstrakulikuler': ['ekskul', 'ekstra', 'eskul', 'pramuka', 'futsal', 'silat', 'hadroh'],
+        'tanya_biaya_paket': ['buku paket', 'paket'],
+        'tanya_biaya_lks': ['buku lks', 'lks'],
+    }
+    if intent not in keywords:
+        return False  # intent tidak dikenal
+    return any(kw in input_text for kw in keywords[intent])
+
+
 def chatbot_reply(input_text):
     try:
         intent = detect_intent(input_text)
-        if intent is None:
+        if intent is None or not is_input_valid_for_intent(intent, input_text):
             return "Maaf saya tidak mengerti, harap ketik ulang pertanyaan yang lebih spesifik."
-        
+
         reply = generate_response(input_text, intent)
         return reply if reply else "Maaf saya tidak mengerti, harap ketik ulang pertanyaan yang lebih spesifik."
     except Exception as e:
